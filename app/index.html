@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Embler</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="img/small-logo-01.png">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
     {{content-for "head"}}
 
@@ -14,12 +18,31 @@
 
     {{content-for "head-footer"}}
   </head>
-  <body>
+  <body class="inner-page">
     {{content-for "body"}}
 
     <script src="assets/vendor.js"></script>
     <script src="assets/embler.js"></script>
 
     {{content-for "body-footer"}}
+
+
+    <!-- SCRIPT -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery-animate-css-rotate-scale.js"></script>
+    <script type="text/javascript" src="js/fastclick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+    <script type="text/javascript" src="js/jquery.animate-shadow-min.js"></script>
+
+    <script>
+      UPLOADCARE_LOCALE = "en";
+      UPLOADCARE_TABS = "file url facebook gdrive dropbox instagram evernote flickr skydrive";
+      UPLOADCARE_PUBLIC_KEY = "8ac391157c9409b5b893";
+    </script>
+    <script charset="utf-8" src="//ucarecdn.com/widget/2.8.2/uploadcare/uploadcare.full.min.js"></script>
+
   </body>
 </html>

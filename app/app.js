@@ -8,6 +8,15 @@ let App;
 Ember.MODEL_FACTORY_INJECTIONS = true;
 
 App = Ember.Application.extend({
+  customEvents: {
+    mouseenter: null,
+    mouseleave: null,
+    click: null,
+    mousedown: null,
+    mouseup: null,
+    mousemove: null
+  },
+  LOG_TRANSITIONS: true,
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
   Resolver

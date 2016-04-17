@@ -4,9 +4,12 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'embler',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://embler.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
+      ENABLE_DS_FILTER: true,
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
